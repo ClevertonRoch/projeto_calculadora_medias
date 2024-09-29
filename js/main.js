@@ -48,20 +48,23 @@ function atualizaNotaFinal() {
 
     const mediaFinal = cauculaMedia()
     const tdMedia = document.getElementById("media")
-    const tdResult = document.getElementById("infoResult")
+    const tdResult = document.querySelector("#infoResult")
+    tdResult.innerHTML =""
     
-    if (mediaFinal >= entrada) {
-        tdResult.className = "approved"
-    }else{
-        tdResult.className= "failed"
-    }
     
     const result = mediaFinal >= entrada ? 'Aprovado' : 'Reprovado'
-    
+    let spanResult = document.createElement('span')
+    spanResult.className
+    if (mediaFinal >= entrada) {
+        spanResult.className = "approved"
+    }else{
+        spanResult.className = "failed"
+    }
 
+    spanResult.innerHTML = result
 
     tdMedia.innerHTML = mediaFinal
-    tdResult.innerHTML = result
+    tdResult.appendChild(spanResult)
 }
 
 function cauculaMedia() {

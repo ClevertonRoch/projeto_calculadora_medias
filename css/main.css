@@ -82,19 +82,20 @@ table tbody td img {
     width: 40px;
 }
 
-.result {
+.infoResult {
     padding: 8px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #000;
 }
 
 .approved {
     background-color: #009432;
     color: #fff;
+    padding: 8px;
+    border-radius: 5px;
 }
 
 .failed {
     background-color: red;
     color: #fff;
+    padding: 8px;
+    border-radius: 5px;
 }
