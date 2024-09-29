@@ -63,7 +63,7 @@ function atualizaNotaFinal() {
 
     spanResult.innerHTML = result
 
-    tdMedia.innerHTML = mediaFinal
+    tdMedia.innerHTML = mediaFinal.toFixed(2)
     tdResult.appendChild(spanResult)
 }
 
